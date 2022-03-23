@@ -1,0 +1,63 @@
+
+* {
+    box-sizing: border-box;
+}
+
+#chess {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#chess, .mezo {
+    border: solid 1px black;
+}
+
+#chess .mezo {
+    flex: 0 0 auto;
+    width: 12.5%;
+    height: 12.5%;
+    font-size: 30pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chess .black {
+    background-color: black;
+    color: white;
+}
+
+#chess .white {
+    background-color: white;
+    color: black;
+}
+
+@media all and (max-width:900px)
+{
+    #chess {
+        width: 60%;
+    }
+}
+
+@media all and (max-width:600px)
+{
+    #chess .mezo {
+        font-size: 20pt;
+    }
+}
+
+@media all and (max-width:400px)
+{
+    #chess {
+        width: 80%;
+    }
+}
+
+@media all and (max-width:300px)
+{
+    #chess .mezo {
+        font-size: 15pt;
+    }
+}
